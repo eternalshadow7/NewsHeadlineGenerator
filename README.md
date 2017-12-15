@@ -1,1 +1,2 @@
 # NewsHeadlineGenerator
+![Screenshot](headlinePic.png)
