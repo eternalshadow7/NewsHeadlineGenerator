@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background-image: url("bkg3.png");
+}
+header{
+	padding: 0em;
+	color:white;
+	background-color: black;
+	clear: left;
+	text-align: center;
+	font-family: times;
+
+}
+.footer{
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #333333;
+	color: white;
+
+
+
+}
+
+</style>
+<header><marquee behavior="scroll"direction="right" scrollamount="20">
+	<h1>The Headline Of The Century!</h1></marquee><script type="text/javascript">
+		var myDate= new Date();
+		var myDay=myDate.getDay();
+		var theYear=myDate.getFullYear();
+		var theMonth=myDate.getMonth()+1;
+		var theToday=myDate.getDate();
+		var swch;
+		var mnth;
+		switch(myDay){
+			case 0:
+			swch="Sunday";
+			break;
+
+			case 1:
+			swch="Monday";
+			break;
+
+			case 2:
+			swch="Tuesday";
+			break;
+
+			case 3:
+			swch="Wednesday";
+			break;
+
+			case 4:
+			swch="Thursday";
+			break;
+
+			case 5:
+			swch="Friday";
+			break;
+
+			case 6:
+			swch="Saturday";
+		}
+		switch(theMonth){
+			case 1:
+			mnth="January";
+			break;
+
+			case 2:
+			mnth="February";
+			break;
+
+			case 3:
+			mnth="March";
+			break;
+
+			case 4:
+			mnth="April";
+			break;
+
+			case 5:
+			mnth="May";
+			break;
+
+			case 6:
+			mnth="June";
+			break;
+
+			case 7:
+			mnth="July";
+			break;
+
+			case 8:
+			mnth="August";
+			break;
+
+			case 9:
+			mnth="September";
+			break
+
+			case 10:
+			mnth="October";
+			break;
+
+			case 11:
+			mnth="November";
+			break;
+
+			case 12:
+			mnth="December";
+		}
+
+		document.write("Today is ");
+		document.write(swch+", "+mnth+" "+theToday+", "+theYear);
+		</script></header><div class="footer">
+			<p>My bot is a news bot that generates local news as a default, but when certain strings are typed, the bot will generate news for those topics. I decided to have it say "hello" in different languages because the news can be global. One of the actions I used was repeating the randomly selected "hello."
+		  This bot was based on what I see on my Facebook account every time I log in. I follow a bunch of magazines and news pages, and many of their headlines are so
+		bizzare, especially the ones about celebrities, so I decided to make my bot make random headlines that are wacky most of the time. For the theme,
+		I tried to make the page look like a newspaper, so using a bunch of shades of gray and putting the current date were intentional. I also used Times New Roman as the font intentionally to replicate the font typically seen on newspapers. I created a texture using a drawing program to make the background look like paper.
+			 I decided to add a header with text that moved because I wanted it to be like a news ticker.
+		<br>............................................................................................................................................................................................................................................................................................................................
+		<br>
+
+			Type "world" for news about the world, "gossip" for celebrity news, and "food" for news about food. Type "help" for suggestions on what to input.
+			Type "ok" for a response from the bot. Type "thank you" afterwards for a "You are welcome" response. Type "really" for a response. Type nothing or anything else for more local news.
+		 </p>
+		</div>
+
+	<script src="js/vendor/seedrandom.js"></script>
+	<script src="js/tracery/mods-eng-basic.js"></script>
+	<script src="js/tracery/tracery.js"></script>
+
+    <title>Wacky News Reports</title>
+    <link rel="stylesheet" type="text/css" href="basic.css" />
+</head>
+<body>
+<button id="send-chirp" class="chirp-button noselect">Breaking News!</button>
+<div id="timeline"></div>
+<script src="./blank_grammar.js"></script>
+<script type="text/javascript">
+     document.write("Seen.");
+</script>
+<script src="./chirpr.js"></script>
+
+</body>
+</html>
