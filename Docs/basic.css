@@ -1,0 +1,76 @@
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+}
+
+.chirp-button {
+    cursor: pointer;
+}
+
+
+.chirp-button {
+    background-color: #373737;
+    color: #F44336;
+    cursor: pointer;
+    width:fit-content;
+    padding: 0.2em;
+    border: 2px white solid;
+    font-family: times;
+}
+/* This will make the button shake if the mouse is on it. */
+.chirp-button:hover {
+        background: red;
+        color: #F0F0F0;
+        border: 2px black solid;
+        animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+} @keyframes shake {
+
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.chirp-button:active {
+        background: white;
+        color: pink;
+        border: 2px blue solid;
+}
+
+div#timeline div.chirp{
+        border: 1px black solid;
+        background-color: #A9A9A9;
+}
+div{
+  background-color: #696969;
+}
+
+.chirp-avatar {
+    font-size:1.3em;
+    font-weight:bold;
+    color: white;
+    font-family: times;
+}
